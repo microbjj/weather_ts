@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding: 40px;
+    max-width: 800px;
+    display: flex;
+    justify-content: start;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.h1 {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.bg {
+    width: 50vw;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.summer {
+    background-image: url("assets/summer-bg.jpg");
+}
+
+.rainy {
+    background-image: url("assets/rainy-bg.jpg");
+}
+
+.winter {
+    background-image: url("assets/winter-bg.jpg");
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.weather-btn {
+    width: 140px;
+    height: 140px;
+    border: 2px gray solid;
+    border-radius: 10px;
+    background-size: 300px 200px;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+#volume {
+    padding: 15px 0;
+    align-self: center;
+    width: 200px;
+}

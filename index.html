@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="src/style.css">
+
+    <script src="dist/index.js" defer></script>
+</head>
+<body>
+    <div class="container bg summer">
+        <div class="main">
+            <h1 class="h1">Weather sounds</h1>
+            <div class="btn-group">
+                <button class="weather-btn summer" id="sunny-btn" data-weather="summer">
+                    <img src="src/assets/icons/sun.svg"  alt="Summer">
+                </button>
+
+                <button class="weather-btn rainy" id="rainy-btn" data-weather="rainy">
+                    <img src="src/assets/icons/cloud-rain.svg"  alt="Rainy">
+                </button>
+
+                <button class="weather-btn winter" id="winter-btn" data-weather="winter">
+                    <img src="src/assets/icons/cloud-snow.svg"  alt="Winter">
+                </button>
+            </div>
+            <input type="range" id="volume" min="0" max="100" value="50">
+            <audio id="summer-sound" src="src/assets/sounds/summer.mp3"></audio>
+            <audio id="rainy-sound" src="src/assets/sounds/rain.mp3"></audio>
+            <audio id="winter-sound" src="src/assets/sounds/winter.mp3"></audio>
+        </div>
+    </div>
+</body>
+</html>
